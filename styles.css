@@ -1,0 +1,48 @@
+/* CSS para el diseño básico */
+
+.tablabicis{
+    display: flex;
+    align-items: center;
+}
+
+.tablabicicletas{
+    align-items: center;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+#formulario {
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #d92525;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4562a0;
+}

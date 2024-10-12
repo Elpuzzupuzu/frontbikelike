@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Bicicletas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Importa el archivo CSS -->
+</head>
+<body>
+
+    <h1>Listado de Bicicletas</h1>
+    <button onclick="listarBicicletas()">Cargar bicicletas</button>
+    <table id="tablaBicicletas">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Tipo</th>
+                <th>Color</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div id="formulario">
+        <h2>Agregar Nueva Bicicleta</h2>
+        <form id="formBici">
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" name="marca" required><br>
+
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" required><br>
+
+            <label for="tipo">Tipo:</label>
+            <input type="text" id="tipo" name="tipo" required><br>
+
+            <label for="tamaño">Tamaño:</label>
+            <input type="text" id="tamaño" name="tamaño" required><br>
+
+            <label for="color">Color:</label>
+            <input type="text" id="color" name="color" required><br>
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" required><br>
+
+            <label for="material">Material:</label>
+            <input type="text" id="material" name="material" required><br>
+
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" name="peso" step="0.1" required><br>
+
+            <label for="cambio">Número de cambios:</label>
+            <input type="number" id="cambio" name="cambio" required><br>
+
+            <label for="disponible">Disponible:</label>
+            <select id="disponible" name="disponible" required>
+                <option value="true">Sí</option>
+                <option value="false">No</option>
+            </select><br>
+
+            <button type="submit">Crear Bicicleta</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script> <!-- Importa el archivo JavaScript -->
+</body>
+</html>
